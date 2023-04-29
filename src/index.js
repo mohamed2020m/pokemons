@@ -2,9 +2,9 @@
 import { View, ScrollView, SafeAreaView } from 'react-native'
 // import {Stack, useRouter} from 'expo-router';
 
-import {COLORS, SIZES} from './constants';
+import {COLORS} from '../constants';
 
-import {Welcome, Pokemons} from './components';
+import {Welcome, Pokemons} from '../components';
 
 const Home = () => {
     return (
@@ -34,7 +34,7 @@ const Home = () => {
                     style={{flex: 1, padding: SIZES.medium}}
                 >
                     <Welcome />
-                    <Pokemons />
+                    {/* <Pokemons /> */}
                 </View>
             </ScrollView>
         </SafeAreaView>
