@@ -9,13 +9,7 @@ const COLORS = {
     white: "#F3F4F8",
     lightWhite: "#FAFAFC",
   };
-  
-  const FONT = {
-    regular: "DMRegular",
-    medium: "DMMedium",
-    bold: "DMBold",
-  };
-  
+
   const SIZES = {
     xSmall: 10,
     small: 12,
@@ -46,7 +40,6 @@ const COLORS = {
       shadowRadius: 5.84,
       elevation: 5,
     },
-  };
-  
-  export { COLORS, FONT, SIZES, SHADOWS };
-  
+};
+
+export { COLORS, SIZES, SHADOWS };
