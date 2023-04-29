@@ -8,6 +8,7 @@ const Welcome = () => {
       <Text style={styles.header}>
         Welcome To Pokemon App
       </Text>
+      <Text style={styles.subHeader}>Discover Pokemons</Text>
     </View>
   )
 }

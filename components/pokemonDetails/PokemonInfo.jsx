@@ -62,18 +62,40 @@ const PokemonInfo = ({item, modalVisible, toggleModal}) => {
               }
             </Text>
           </View>
-          {/* <View style={styles.detail}>
-            <Text style={styles.textHStyle}>Type:</Text>
+          <View style={styles.detail}>
+            <Text style={styles.textHStyle}>Prev Evolution:</Text>
             <Text style={styles.textStyle}>
               {
-                item.type.map((t, index) => (
-                  <View key={index}>
-                    <Text>{t}, </Text>
+                item.prev_evolution ?
+                  item.prev_evolution?.map((t, index) => (
+                    <View key={index}>
+                      <Text>{t.name}, </Text>
+                    </View>
+                  ))
+                  :
+                  <View>
+                    <Text>---</Text>
                   </View>
-                ))
               }
             </Text>
-          </View> */}
+          </View>
+          <View style={styles.detail}>
+            <Text style={styles.textHStyle}>Next Evolution:</Text>
+            <Text style={styles.textStyle}>
+              {
+                item.next_evolution ?
+                  item.next_evolution?.map((t, index) => (
+                    <View key={index}>
+                      <Text>{t.name}, </Text>
+                    </View>
+                  ))
+                  :
+                  <View>
+                    <Text>---</Text>
+                  </View>
+              }
+            </Text>
+          </View>
           <View style={styles.closeBtn}>
             <Button title="Close" onPress={toggleModal} />
           </View>
